@@ -1,0 +1,140 @@
+#container {background-image: url('handsyopa.jpg');
+   height: 770px;  
+   max-width:1300px;
+   position:relative;
+   display:flex;
+   flex-direction:row;
+   justify-content:space-around;
+   align-items:center;
+   align-content:space-between;
+   border:dashed 1px purple;
+   }
+
+.parag {font-family: fantasy;
+    position:absolute;
+    top:100px;
+    left:500px;
+    font-size: 30px;
+    font-style:bold;
+     color: yellow;}
+
+#playerScore {border: solid black 2px;
+    display:flex;
+width: 150px;
+position:absolute;
+top:100px;
+left:100px;
+justify-content:center;}
+
+#compScore {border: solid black 2px;
+width: 150px;
+display:flex;
+align-items: center;
+    justify-content: center;
+    position:absolute;
+    top:100px;
+    left:800px;
+}
+
+.rock {
+    width: 200px;
+    height: 200px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border: solid black 2px;
+background-image: url('rocky.jpg');
+ background-size: 300px;
+ background-repeat:no-repeat;
+ background-position:35% 50%;
+}
+
+
+#paper {
+width: 200px;
+height: 200px;
+align-items: center;
+    display: flex;
+    justify-content: center;
+border: solid black 2px;
+background-color: #cccccc;
+background-image: url(
+https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3V69i4JxaMa89A9PHIhTSqcVHfUifpovhfz7Mp4bSvhTPUu1U)
+;
+background-size: 200px 200px;}
+
+#scissors {
+width: 200px;
+height: 200px;
+align-items: center;
+    display: flex;
+    justify-content: center;
+border: solid black 2px;
+background-color: #cccccc;
+background-image: url(http://www.clipartlord.com/wp-content/uploads/2016/08/scissors7-232x240.png)
+;
+background-size: 200px;}
+
+
+button{background-color: beige;
+    font-size: 20px;
+    color: red;
+    border: 2px solid #4CAF50;
+}
+button:hover{background-color: #4CAF50;
+    color: white;
+}
+button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+
+.largefont { 
+    color: red; 
+    font-family:arial; 
+    text-transform: uppercase;
+    display: block;
+    position: relative;
+}
+
+#demo {
+    position: absolute;
+    text-align: center;
+    height: auto;
+    width: auto;
+    max-width: 200px;
+    border: dashed black 2px
+    
+}
+
+.demo-prompt {
+    position:absolute;
+    border: solid black 2px;
+    color: black;
+    font: 10px Arial;
+    top:200px;
+}
+
+
+.demo-result {
+    position:absolute;
+    margin: 0;
+    font: bold 30px Georgia;
+    color: black;
+    border: 5px dashed orange;
+    transition: rotate 2s;
+}
+
+#donk {position: absolute;
+left: 550px;
+top: 300px;}
+
+#resuult {position: absolute;
+    left: 550px;
+    top: 550px;}
+
+
+      
+
