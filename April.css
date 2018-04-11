@@ -1,7 +1,5 @@
 #container {
-    background-color: cornflowerblue;
-   height: 770px;  
-   max-width:1300px;
+    background-color: cornflowerblue;  
    display:grid;
   
   
