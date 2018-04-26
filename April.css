@@ -1,48 +1,63 @@
+* {
+    box-sizing: border-box;
+}
+
+
 #container {
     background-color: cornflowerblue;  
    display:grid;
-  
-  
-   grid-template-columns: 2fr 2fr 2fr ;
+   grid-template-columns:minmax(200px, 2fr) minmax(200px, 2fr) minmax(200px, 2fr) ;
    grid-template-rows: 1fr 1fr 3fr 2fr;
    padding:20px;
    border:dashed 1px purple;
    grid-gap: 5px;
+   width: 100vw;
+   height:100vh;
+   
    }
 
 
 
 
 
+
 #playerScore {border: solid white 5px;
-justify-content:center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
 background-color:orange;
 grid-area: 1/1/2/2;}
 
 
-#compScore {border: solid red 2px;
-align-items: center;
+#compScore {border: solid white 5px;
+    align-items: center;
+    display: flex;
     justify-content: center;
     grid-area:1/3/2/4;
+    background-color:orange;
+    width:100%;
 }
 
 .rock {
     align-items: center;
+    display: flex;
     justify-content: center;
     border: solid red 12px;
     background-color:purple;
 background-image: url('rocky.jpg');
- background-size: 300px;
- background-repeat:no-repeat;
+ background-size: 100%;
+ background-repeat:repeat;
  grid-area:3/1/4/2;
 }
 
 
 #paper {
-border: solid red 12px;
+border: solid blue 12px;
 align-items: center;
+display: flex;
+justify-content: center;
+
 grid-area:3/2/4/3;
-    justify-content: center;
 background-color: #cccccc;
 background-image: url(
 https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3V69i4JxaMa89A9PHIhTSqcVHfUifpovhfz7Mp4bSvhTPUu1U)
@@ -50,14 +65,14 @@ https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3V69i4JxaMa89A9PHIhTSqcVH
 background-size: 200px 200px;}
 
 #scissors {
-align-items: center;
+
 grid-area:3/3/4/4;
-    justify-content: center;
+align-items: center;
+display: flex;
+justify-content: center;
 border: solid red 12px;
 background-color: #cccccc;
-background-image: url(http://www.clipartlord.com/wp-content/uploads/2016/08/scissors7-232x240.png)
-;
-background-size: 200px;}
+background-image: url(http://www.clipartlord.com/wp-content/uploads/2016/08/scissors7-232x240.png)}
 
 
 button{background-color: beige;
@@ -83,11 +98,12 @@ button:active {
 
 #demo {
     text-align: center;
-    height: auto;
-    width: auto;
-    max-width: 200px;
+    display:flex;
     border: dashed black 2px;
     grid-area:2/2/3/3;
+    align-content: center;
+    justify-content: center;
+    align-items:center;
     
 }
 
@@ -95,8 +111,8 @@ button:active {
     border: solid black 2px;
     color: black;
     font: 10px Arial;
-    grid-area:2/2/3/3;
-    size:auto;
+    grid-area:2/2/3/4;
+   
     align-content: center;
     justify-content: center;
 }
