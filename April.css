@@ -127,7 +127,7 @@ button:active {
 
  #container {
     background-image:url('https://user-images.githubusercontent.com/31823017/39372908-bb7947a8-4a3d-11e8-8f0a-c1cd210d1575.png'); 
-  background-size:99% 99%;
+  background-size:100% 100%;
    display:grid;
    grid-template-columns:minmax(200px, 2fr) minmax(200px, 2fr) minmax(200px, 2fr);
    grid-template-rows: .5fr 1fr 5fr 2fr;
@@ -149,11 +149,14 @@ justify-content:center;};
 
 }
 
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 300px) and (min-width: 100px) {
     #container {
-        height:97vh
-    }
+
+    background:black
+    };
 
 }
+
+
       
 
