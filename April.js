@@ -102,19 +102,19 @@ RockBut.addEventListener("click", function Flashbox() {
   )[0].style.borderColor = randomColor();
 });
 
-paper.addEventListener("click", PlaySoundP);
-paper.addEventListener("click", onetothree);
-paper.addEventListener("click", YouChosePaper);
-paper.addEventListener("click", function Flashbox() {
+paperBut.addEventListener("click", PlaySoundP);
+paperBut.addEventListener("click", onetothree);
+paperBut.addEventListener("click", YouChosePaper);
+paperBut.addEventListener("click", function Flashbox() {
   document.getElementsByClassName(
     "demo-result"
   )[0].style.borderColor = randomColor();
 });
 
-scissors.addEventListener("click", PlaySoundS);
-scissors.addEventListener("click", onetothree);
-scissors.addEventListener("click", YouChoseScissors);
-scissors.addEventListener("click", function Flashbox() {
+scissorsBut.addEventListener("click", PlaySoundS);
+scissorsBut.addEventListener("click", onetothree);
+scissorsBut.addEventListener("click", YouChoseScissors);
+scissorsBut.addEventListener("click", function Flashbox() {
   document.getElementsByClassName(
     "demo-result"
   )[0].style.borderColor = randomColor();

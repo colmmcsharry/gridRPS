@@ -40,8 +40,8 @@ background-size:100% 300%;
     justify-content: center;
     border: solid black 3px;
     background-color:lightslategray;
-background-image: url('rocky.jpg');
- background-size: 100% 100%;
+background-image: url(https://user-images.githubusercontent.com/31823017/37183020-ecec6718-232b-11e8-89d4-a0a3a90c76dc.jpg);
+ background-size: 150% 120%;
  background-repeat:no-repeat;
  background-position:center;
  grid-area:3/1/4/2;
@@ -54,11 +54,13 @@ align-items: center;
 display: flex;
 justify-content: center;
 grid-area:3/2/4/3;
-background-color: #cccccc;
+background-color: white;
+background-position:center;
+background-repeat:no-repeat;
 background-image: url(
 https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3V69i4JxaMa89A9PHIhTSqcVHfUifpovhfz7Mp4bSvhTPUu1U)
 ;
-background-size:100% 100%;
+background-size:95% 95%;
 }
 
 #scissors {
@@ -67,7 +69,7 @@ grid-area:3/3/4/4;
 border: solid black 3px;
 background-color: #cccccc;
 background-image: url(http://www.clipartlord.com/wp-content/uploads/2016/08/scissors7-232x240.png);
-background-size: 90% 90%;
+background-size: 85% 85%;
 background-position:center;
 align-items:center;
 background-repeat:no-repeat;
@@ -146,14 +148,8 @@ button:active {
        grid-template-columns: minmax(95px, 2fr) minmax(95px, 2fr) minmax(95px, 2fr) ;
    }
    .rock {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    border: solid black 3px;
     background-color:rgb(115, 159, 196);
-background-image: url('rocky.jpg');
- background-size: 150% 90%;
- background-position:center;
+ background-size: 180% 90%;
 }
 #playerScore, #compScore {
     border: 1px solid red;
@@ -164,11 +160,6 @@ background-image: url('rocky.jpg');
 }
 }
 
-@media only screen and (max-width: 300px) and (min-width: 100px) {
-    #container {
-    background:black
-    }
-}
 
 
       
