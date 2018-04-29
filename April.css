@@ -8,26 +8,28 @@ padding:0;
 }
 
 
-
-
-
-
-
-
-#playerScore {border: solid white 5px;
+#playerScore {border: solid white 1px;
+    margin:0;
+    padding:0;
     align-items: center;
     display: flex;
     justify-content: center;
-background-color:orange;
+background-image:url(https://user-images.githubusercontent.com/31823017/39405164-18386a7c-4b98-11e8-9a68-bf7d09639637.png);
+background-position:center;
+background-repeat:no-repeat;
+background-size:100% 200%;
 grid-area: 1/1/2/2;}
 
 
-#compScore {border: solid white 5px;
+#compScore {border: solid white 1px;
     align-items: center;
     display: flex;
     justify-content: center;
     grid-area:1/3/2/4;
-    background-color:orange;
+    background-image:url(https://user-images.githubusercontent.com/31823017/39405164-18386a7c-4b98-11e8-9a68-bf7d09639637.png);
+background-position:center;
+background-repeat:no-repeat;
+background-size:100% 200%;
 }
 
 .rock {
