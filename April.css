@@ -18,7 +18,7 @@ padding:0;
 background-image:url(https://user-images.githubusercontent.com/31823017/39405164-18386a7c-4b98-11e8-9a68-bf7d09639637.png);
 background-position:center;
 background-repeat:no-repeat;
-background-size:100% 200%;
+background-size:100% 150%;
 grid-area: 1/1/2/2;}
 
 
@@ -31,14 +31,14 @@ grid-area: 1/1/2/2;}
     background-image:url(https://user-images.githubusercontent.com/31823017/39405164-18386a7c-4b98-11e8-9a68-bf7d09639637.png);
 background-position:center;
 background-repeat:no-repeat;
-background-size:100% 200%;
+background-size:100% 150%;
 }
 
 .rock {
     align-items: center;
     display: flex;
     justify-content: center;
-    border: solid red 12px;
+    border: solid black 3px;
     background-color:lightslategray;
 background-image: url('rocky.jpg');
  background-size: 100% 100%;
@@ -49,7 +49,7 @@ background-image: url('rocky.jpg');
 
 
 #paper {
-border: solid blue 12px;
+border: solid black 3px;
 align-items: center;
 display: flex;
 justify-content: center;
@@ -64,7 +64,7 @@ background-size:100% 100%;
 #scissors {
 
 grid-area:3/3/4/4;
-border: solid red 12px;
+border: solid black 3px;
 background-color: #cccccc;
 background-image: url(http://www.clipartlord.com/wp-content/uploads/2016/08/scissors7-232x240.png);
 background-size: 90% 90%;
@@ -129,7 +129,7 @@ button:active {
     grid-area:2/2/3/3;
 }
 
-#resuult {border: solid red 12px;
+#resuult {text-align: center;
   }
 
  #container {
@@ -151,15 +151,21 @@ button:active {
     align-items: center;
     display: flex;
     justify-content: center;
-    border: solid red 12px;
+    border: solid black 3px;
     background-color:rgb(115, 159, 196);
 background-image: url('rocky.jpg');
  background-size: 150% 90%;
  background-repeat:no-repeat;
  background-position:center;
  grid-area:3/1/4/2;
-    border-color: blue;
-}}
+
+}
+#playerScore, #compScore {
+    border: 1px solid red;
+    background-size:100% 100%;
+    background-repeat:no-repeat;
+}
+}
 
 @media only screen and (max-width: 300px) and (min-width: 100px) {
     #container {
