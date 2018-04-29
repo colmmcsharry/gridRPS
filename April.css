@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 
-body{background-color:green;
+*{
 margin:0;
 padding:0;
 }
@@ -18,7 +18,7 @@ padding:0;
 background-image:url(https://user-images.githubusercontent.com/31823017/39405164-18386a7c-4b98-11e8-9a68-bf7d09639637.png);
 background-position:center;
 background-repeat:no-repeat;
-background-size:100% 150%;
+background-size:100% 300%;
 grid-area: 1/1/2/2;}
 
 
@@ -31,7 +31,7 @@ grid-area: 1/1/2/2;}
     background-image:url(https://user-images.githubusercontent.com/31823017/39405164-18386a7c-4b98-11e8-9a68-bf7d09639637.png);
 background-position:center;
 background-repeat:no-repeat;
-background-size:100% 150%;
+background-size:100% 300%;
 }
 
 .rock {
@@ -101,7 +101,6 @@ button:active {
 #demo {
     text-align: center;
     display:flex;
-    border: dashed black 2px;
     grid-area:2/2/3/3;
     align-content: center;
     justify-content: center;
@@ -110,7 +109,6 @@ button:active {
 }
 
 .demo-prompt {
-    border: solid black 2px;
     color: black;
     font: 10px Arial;
     grid-area:2/2/3/4;
@@ -138,7 +136,7 @@ button:active {
    display:grid;
    grid-template-columns:minmax(200px, 2fr) minmax(200px, 2fr) minmax(200px, 2fr);
    grid-template-rows: .5fr 1fr 5fr 2fr;
-   border:dashed 1px purple;
+
    height:100vh;
    padding:00px;
    }
@@ -155,14 +153,13 @@ button:active {
     background-color:rgb(115, 159, 196);
 background-image: url('rocky.jpg');
  background-size: 150% 90%;
- background-repeat:no-repeat;
  background-position:center;
- grid-area:3/1/4/2;
-
 }
 #playerScore, #compScore {
     border: 1px solid red;
-    background-size:100% 100%;
+    margin:0px;
+    padding:8px;
+    background-size:100% 200%;
     background-repeat:no-repeat;
 }
 }
