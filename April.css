@@ -7,10 +7,11 @@ margin:0;
 padding:0;
 }
 
+body{font-weight:bold;}
 
 #playerScore {border: solid white 1px;
     margin:0;
-    padding:0;
+    padding:10px;
     align-items: center;
     text-align: center;
     display: flex;
@@ -54,6 +55,7 @@ align-items: center;
 display: flex;
 justify-content: center;
 grid-area:3/2/4/3;
+padding:10px;
 background-color: white;
 background-position:center;
 background-repeat:no-repeat;
@@ -79,10 +81,12 @@ display:flex;
 
 
 
-button{background-color: beige;
+button{padding:6px;
+    background-color: beige;
     font-size: 20px;
     color: red;
     border: 2px solid #4CAF50;
+
 }
 button:hover{background-color: #4CAF50;
     color: white;
@@ -112,9 +116,8 @@ button:active {
 
 .demo-prompt {
     color: black;
-    font: 10px Arial;
+    font-size: 1.5rem;
     grid-area:2/2/3/4;
-   
     align-content: center;
     justify-content: center;
 }
@@ -138,18 +141,21 @@ button:active {
    display:grid;
    grid-template-columns:minmax(200px, 2fr) minmax(200px, 2fr) minmax(200px, 2fr);
    grid-template-rows: .5fr 1fr 5fr 2fr;
-
    height:100vh;
-   padding:00px;
+   padding:0px 15px;
+   grid-column-gap: 10px;
    }
 
   @media only screen and (max-width:600px) {
     #container {
-       grid-template-columns: minmax(95px, 2fr) minmax(95px, 2fr) minmax(95px, 2fr) ;
-   }
+       grid-template-columns: minmax(95px, 2fr) minmax(95px, 2fr) minmax(95px, 2fr) ;}
    .rock {
     background-color:rgb(115, 159, 196);
  background-size: 180% 90%;
+}
+
+.demo-prompt{
+    font-size:1em;
 }
 #playerScore, #compScore {
     border: 1px solid red;
