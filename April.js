@@ -1,5 +1,6 @@
 playerScore = 0;
 compScore = 0;
+
 function onetothree() {
   res = Math.floor(Math.random() * 3) + 1;
   const containerdem = document.getElementById("demo");
@@ -65,6 +66,55 @@ function onetothree() {
       document.getElementById("resuult").innerHTML = "you lose!";
       compScore++;
       document.getElementById("compScore").innerHTML = compScore;
+    }
+    if (compScore === 1) {
+      document.getElementById("playerScore").style.backgroundImage =
+        "url('https://user-images.githubusercontent.com/31823017/39405166-2630be9a-4b98-11e8-8904-f93554cbbdab.png')";
+    }
+    if (compScore === 2) {
+      document.getElementById("playerScore").style.backgroundImage =
+        "url('https://user-images.githubusercontent.com/31823017/39405170-31ec2b98-4b98-11e8-8dad-c79b664995ff.png')";
+    }
+    if (compScore === 3) {
+      document.getElementById("playerScore").style.backgroundImage =
+        "url('https://user-images.githubusercontent.com/31823017/39405169-31cfb486-4b98-11e8-8bdb-97cd112b74ee.png')";
+    }
+    if (compScore === 4) {
+      document.getElementById("playerScore").style.backgroundImage =
+        "url('https://user-images.githubusercontent.com/31823017/39405168-31b19884-4b98-11e8-829a-7514ca785953.png')";
+    }
+    if (compScore === 5) {
+      document.getElementById("playerScore").style.backgroundImage = "url('')";
+      setTimeout(delayedReload, 1000);
+      function delayedReload() {
+        alert("Game Over! Play again?");
+        location.reload();
+      }
+    }
+
+    if (playerScore === 1) {
+      document.getElementById("compScore").style.backgroundImage =
+        "url('https://user-images.githubusercontent.com/31823017/39405166-2630be9a-4b98-11e8-8904-f93554cbbdab.png')";
+    }
+    if (playerScore === 2) {
+      document.getElementById("compScore").style.backgroundImage =
+        "url('https://user-images.githubusercontent.com/31823017/39405170-31ec2b98-4b98-11e8-8dad-c79b664995ff.png')";
+    }
+    if (playerScore === 3) {
+      document.getElementById("compScore").style.backgroundImage =
+        "url('https://user-images.githubusercontent.com/31823017/39405169-31cfb486-4b98-11e8-8bdb-97cd112b74ee.png')";
+    }
+    if (playerScore === 4) {
+      document.getElementById("compScore").style.backgroundImage =
+        "url('https://user-images.githubusercontent.com/31823017/39405168-31b19884-4b98-11e8-829a-7514ca785953.png')";
+    }
+    if (playerScore === 5) {
+      document.getElementById("compScore").style.backgroundImage = "url('')";
+      setTimeout(delayedReload, 1000);
+      function delayedReload() {
+        alert("Game Over! Play again?");
+        location.reload();
+      }
     }
   }
 

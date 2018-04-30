@@ -9,8 +9,9 @@ padding:0;
 
 body{font-weight:bold;}
 
-#playerScore {border: solid white 1px;
-    margin:0;
+#playerScore {border: solid black 6px;
+    border-radius: 10px;
+    margin:13px;
     padding:10px;
     align-items: center;
     text-align: center;
@@ -19,11 +20,13 @@ body{font-weight:bold;}
 background-image:url(https://user-images.githubusercontent.com/31823017/39405164-18386a7c-4b98-11e8-9a68-bf7d09639637.png);
 background-position:center;
 background-repeat:no-repeat;
-background-size:100% 300%;
+background-size:107% 300%;
 grid-area: 1/1/2/2;}
 
 
-#compScore {border: solid white 1px;
+#compScore {border: solid black 6px;
+    border-radius: 10px;
+    margin:13px;
     align-items: center;
     display: flex;
     justify-content: center;
@@ -32,7 +35,7 @@ grid-area: 1/1/2/2;}
     background-image:url(https://user-images.githubusercontent.com/31823017/39405164-18386a7c-4b98-11e8-9a68-bf7d09639637.png);
 background-position:center;
 background-repeat:no-repeat;
-background-size:100% 300%;
+background-size:107% 300%;
 }
 
 .rock {
