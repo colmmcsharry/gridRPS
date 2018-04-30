@@ -160,13 +160,7 @@ button:active {
 .demo-prompt{
     font-size:1em;
 }
-#playerScore, #compScore {
-    border: 1px solid red;
-    margin:0px;
-    padding:8px;
-    background-size:100% 200%;
-    background-repeat:no-repeat;
-}
+
 }
 
 
