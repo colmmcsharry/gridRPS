@@ -13,7 +13,7 @@ function onetothree() {
 
   //we use this paragraphs for all our conditions so we right here only once
   const p = document.createElement("p");
-  p.textContent = "Computer chose";
+  p.textContent = "Computer chose ";
   p.classList.add("demo-result");
 
   //Create the span the result is going into
@@ -149,7 +149,7 @@ RockBut.addEventListener("click", PlaySoundR);
 RockBut.addEventListener("click", function Flashbox() {
   document.getElementsByClassName(
     "demo-result"
-  )[0].style.borderColor = randomColor();
+  )[0].style.color = randomColor();
 });
 
 paperBut.addEventListener("click", PlaySoundP);
@@ -158,7 +158,7 @@ paperBut.addEventListener("click", YouChosePaper);
 paperBut.addEventListener("click", function Flashbox() {
   document.getElementsByClassName(
     "demo-result"
-  )[0].style.borderColor = randomColor();
+  )[0].style.color = randomColor();
 });
 
 scissorsBut.addEventListener("click", PlaySoundS);
@@ -167,8 +167,9 @@ scissorsBut.addEventListener("click", YouChoseScissors);
 scissorsBut.addEventListener("click", function Flashbox() {
   document.getElementsByClassName(
     "demo-result"
-  )[0].style.borderColor = randomColor();
+  )[0].style.color = randomColor();
 });
+        
 
 function randomColor() {
   var randomRed = Math.floor(Math.random() * 255);
