@@ -9,91 +9,64 @@ padding:0;
 
 body{font-weight:bold;}
 
-#playerScore {border: solid black .2em;
-    border-radius: 10px;
+.healthBar{border: solid black .1em;
+    border-radius: .5em;
     align-items: center;
     text-align: center;
     display: flex;
     justify-content: center;
     position:absolute;
     top:20px;
-    left:30px;
     height:5%;
     width: 25%;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:107% 300%;
+    padding:10px;}
+
+#playerScore {
+    left:30px;   
 background-image:url(https://user-images.githubusercontent.com/31823017/39405164-18386a7c-4b98-11e8-9a68-bf7d09639637.png);
-background-position:center;
-background-repeat:no-repeat;
-background-size:107% 300%;
-padding:10px;
 }
 
 
-#compScore {border: solid black .2em;
-    border-radius: 10px;
-    align-items: center;
-    display: flex;
-    width: 25%;
-    height:5%;
-    justify-content: center;
-    text-align: center;
-    position:absolute;
-    top: 20px;
+#compScore {
     right: 30px;
     background-image:url(https://user-images.githubusercontent.com/31823017/39405164-18386a7c-4b98-11e8-9a68-bf7d09639637.png);
-background-position:center;
-background-repeat:no-repeat;
-background-size:107% 300%;
-padding:10px;
 }
 
 .rock {
-    margin:10px 0px 0px 0px;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    border: solid black 3px;
-    background-color:lightslategray;
+  background-color:lightslategray;
 background-image: url(https://user-images.githubusercontent.com/31823017/37183020-ecec6718-232b-11e8-89d4-a0a3a90c76dc.jpg);
  background-size: 150% 120%;
- background-repeat:no-repeat;
- background-position:center;
  grid-area:3/1/4/2;
 }
 
 
 #paper {
-    margin:10px 0px 0px 0px;
-border: solid black 3px;
-align-items: center;
-display: flex;
-justify-content: center;
 grid-area:3/2/4/3;
-padding:10px;
-background-color: white;
-background-position:center;
-background-repeat:no-repeat;
+background-color:rgba(57, 93, 148, 0.322) ;
 background-image: url(
-https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3V69i4JxaMa89A9PHIhTSqcVHfUifpovhfz7Mp4bSvhTPUu1U)
-;
+https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3V69i4JxaMa89A9PHIhTSqcVHfUifpovhfz7Mp4bSvhTPUu1U);
 background-size:95% 95%;
-z-index:2;
 }
 
 #scissors {
-    margin:10px 0px 0px 0px;
 grid-area:3/3/4/4;
-border: solid black 3px;
 background-color: #cccccc;
 background-image: url(http://www.clipartlord.com/wp-content/uploads/2016/08/scissors7-232x240.png);
 background-size: 85% 85%;
+}
+
+.RPSboxes
+{margin:10px 0px 0px 0px;
+border: solid black 3px;
 background-position:center;
 align-items:center;
 background-repeat:no-repeat;
-justify-content: center;
+justify-content:center;
 display:flex;
 }
-
-
 
 button{padding:6px;
     background-color: beige;
@@ -140,12 +113,12 @@ button:active {
 
 .demo-result {
     padding:10px;
-    font: 20px Georgia;
+    font: 1.5em Georgia;
     color: black;
     transition: rotate 2s;
     position:absolute;
     top: 5%;
-    left:37%;
+    left:35%;
     z-index:1;
     width: 25%;
     height:12%;
@@ -153,10 +126,11 @@ button:active {
 
 #resuult {text-align: center;
     position:absolute;
-    top: 20%;
+    color:blue;
+    top: 15%;
     left:25%;
     width: 50%;
-    height:25%;
+    max-height:5%;
     z-index:5;
     font-size:5em;
   }
@@ -169,7 +143,7 @@ button:active {
    grid-template-rows: .5fr 1fr 5fr 2fr;
    height:100vh;
    padding:0px 15px;
-   grid-column-gap: 10px;
+   grid-column-gap: 15px;
    font-size:16px;
    }
 

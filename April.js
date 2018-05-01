@@ -1,6 +1,7 @@
 playerScore = 0;
 compScore = 0;
 
+// this function creates a random number from 1-3
 function onetothree() {
   res = Math.floor(Math.random() * 3) + 1;
   const containerdem = document.getElementById("demo");
@@ -12,9 +13,11 @@ function onetothree() {
   containerdem.classList.remove("demo-prompt");
 
   //we use this paragraphs for all our conditions so we right here only once
+
+  // this paragraph gets created only when the onetothree function runs
   const p = document.createElement("p");
   p.textContent = "Computer chose ";
-  p.classList.add("demo-result");
+  p.classList.add("demo-result"); 
 
   //Create the span the result is going into
   const result = document.createElement("span");
@@ -29,7 +32,7 @@ function onetothree() {
     result.textContent = "scissor";
   }
 
-  //do operations after the condtions instead of inside each condition to avoid duplication
+  //do operations after the conditions instead of inside each condition to avoid duplication
   result.classList.add("largefont");
   p.appendChild(result);
 
@@ -37,33 +40,33 @@ function onetothree() {
 
   function PlayGame() {
     if (playerChoice === "ROCK" && res === 3) {
-      document.getElementById("resuult").innerHTML = "draw!";
+      document.getElementById("resuult").innerHTML = "DRAW!";
     } else if (playerChoice === "ROCK" && res === 2) {
-      document.getElementById("resuult").innerHTML = "you lose!";
+      document.getElementById("resuult").innerHTML = "You LOSE!";
       compScore++;
       document.getElementById("compScore").innerHTML = compScore;
     } else if (playerChoice === "ROCK" && res <= 1.99) {
-      document.getElementById("resuult").innerHTML = "you WIN!";
+      document.getElementById("resuult").innerHTML = "You WIN!";
       playerScore++;
       document.getElementById("playerScore").innerHTML = playerScore;
     } else if (playerChoice === "SCISSORS" && res <= 1.99) {
-      document.getElementById("resuult").innerHTML = "draw!";
+      document.getElementById("resuult").innerHTML = "DRAW!";
     } else if (playerChoice === "SCISSORS" && res === 3) {
-      document.getElementById("resuult").innerHTML = "you lose!";
+      document.getElementById("resuult").innerHTML = "You LOSE!";
       compScore++;
       document.getElementById("compScore").innerHTML = compScore;
     } else if (playerChoice === "SCISSORS" && res === 2) {
-      document.getElementById("resuult").innerHTML = "you WIN!";
+      document.getElementById("resuult").innerHTML = "You WIN!";
       playerScore++;
       document.getElementById("playerScore").innerHTML = playerScore;
     } else if (playerChoice === "PAPER" && res === 2) {
-      document.getElementById("resuult").innerHTML = "draw!";
+      document.getElementById("resuult").innerHTML = "DRAW!";
     } else if (playerChoice === "PAPER" && res === 3) {
-      document.getElementById("resuult").innerHTML = "you win!";
+      document.getElementById("resuult").innerHTML = "You WIN!";
       playerScore++;
       document.getElementById("playerScore").innerHTML = playerScore;
     } else if (playerChoice === "PAPER" && res <= 1.99) {
-      document.getElementById("resuult").innerHTML = "you lose!";
+      document.getElementById("resuult").innerHTML = "You LOSE!";
       compScore++;
       document.getElementById("compScore").innerHTML = compScore;
     }
@@ -83,6 +86,7 @@ function onetothree() {
       document.getElementById("playerScore").style.backgroundImage =
         "url('https://user-images.githubusercontent.com/31823017/39405168-31b19884-4b98-11e8-829a-7514ca785953.png')";
     }
+    // the timeOut thing delays in milliseconds how long until the Alert shows up, location.reload refreshes the page if you click ok.
     if (compScore === 5) {
       document.getElementById("playerScore").style.backgroundImage = "url('')";
       setTimeout(delayedReload, 1000);
@@ -117,7 +121,7 @@ function onetothree() {
       }
     }
   }
-
+// not sure why this Rockbut is here but IIRC things don't work when I move it
   RockBut.addEventListener("click", PlayGame());
 }
 function PlaySoundS() {
@@ -133,29 +137,21 @@ function PlaySoundR() {
   sound.play();
 }
 
-function YouChoseRock() {
-  document.getElementById("donk").innerHTML = "you chose rock";
-}
-function YouChosePaper() {
-  document.getElementById("donk").innerHTML = "you chose paper";
-}
-function YouChoseScissors() {
-  document.getElementById("donk").innerHTML = "you chose scissors";
-}
 
-RockBut.addEventListener("click", YouChoseRock);
+
+
+
 RockBut.addEventListener("click", onetothree);
 RockBut.addEventListener("click", PlaySoundR);
-RockBut.addEventListener("click", function Flashbox() {
+RockBut.addEventListener("click", function colorText() {
   document.getElementsByClassName(
     "demo-result"
   )[0].style.color = randomColor();
 });
-
 paperBut.addEventListener("click", PlaySoundP);
 paperBut.addEventListener("click", onetothree);
-paperBut.addEventListener("click", YouChosePaper);
-paperBut.addEventListener("click", function Flashbox() {
+
+paperBut.addEventListener("click", function colorText() {
   document.getElementsByClassName(
     "demo-result"
   )[0].style.color = randomColor();
@@ -163,8 +159,7 @@ paperBut.addEventListener("click", function Flashbox() {
 
 scissorsBut.addEventListener("click", PlaySoundS);
 scissorsBut.addEventListener("click", onetothree);
-scissorsBut.addEventListener("click", YouChoseScissors);
-scissorsBut.addEventListener("click", function Flashbox() {
+scissorsBut.addEventListener("click", function colorText() {
   document.getElementsByClassName(
     "demo-result"
   )[0].style.color = randomColor();
