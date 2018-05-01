@@ -86,7 +86,7 @@ function onetothree() {
       document.getElementById("playerScore").style.backgroundImage =
         "url('https://user-images.githubusercontent.com/31823017/39405168-31b19884-4b98-11e8-829a-7514ca785953.png')";
     }
-    // the timeOut thing delays in milliseconds how long until the Alert shows up, location.reload refreshes the page if you click ok.
+    // the timeOut thing delays in milliseconds how long until the Alert shows up, location.reload and refreshes the page if you click ok.
     if (compScore === 5) {
       document.getElementById("playerScore").style.backgroundImage = "url('')";
       setTimeout(delayedReload, 1000);
@@ -121,18 +121,18 @@ function onetothree() {
       }
     }
   }
-// not sure why this Rockbut is here but IIRC things don't work when I move it
-  RockBut.addEventListener("click", PlayGame());
+
+  rockBut.addEventListener("click", PlayGame());
 }
-function PlaySoundS() {
+function playSoundS() {
   var sound = document.getElementById("scisound");
   sound.play();
 }
-function PlaySoundP() {
+function playSoundP() {
   var sound = document.getElementById("papsound");
   sound.play();
 }
-function PlaySoundR() {
+function playSoundR() {
   var sound = document.getElementById("roksound");
   sound.play();
 }
@@ -141,14 +141,14 @@ function PlaySoundR() {
 
 
 
-RockBut.addEventListener("click", onetothree);
-RockBut.addEventListener("click", PlaySoundR);
-RockBut.addEventListener("click", function colorText() {
+rockBut.addEventListener("click", onetothree);
+rockBut.addEventListener("click", playSoundR);
+rockBut.addEventListener("click", function colorText() {
   document.getElementsByClassName(
     "demo-result"
   )[0].style.color = randomColor();
 });
-paperBut.addEventListener("click", PlaySoundP);
+paperBut.addEventListener("click", playSoundP);
 paperBut.addEventListener("click", onetothree);
 
 paperBut.addEventListener("click", function colorText() {
@@ -157,7 +157,7 @@ paperBut.addEventListener("click", function colorText() {
   )[0].style.color = randomColor();
 });
 
-scissorsBut.addEventListener("click", PlaySoundS);
+scissorsBut.addEventListener("click", playSoundS);
 scissorsBut.addEventListener("click", onetothree);
 scissorsBut.addEventListener("click", function colorText() {
   document.getElementsByClassName(
@@ -179,7 +179,7 @@ function randomColor() {
 
 // playerChoice is just the string that shows up in text what you clicked on
 let playerChoice = "";
-RockBut.addEventListener("click", function() {
+rockBut.addEventListener("click", function() {
   playerChoice = "ROCK";
 });
 
