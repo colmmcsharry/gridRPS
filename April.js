@@ -2,7 +2,7 @@ playerScore = 0;
 compScore = 0;
 
 // this function creates a random number from 1-3
-function onetothree() {
+function oneToThree() {
   res = Math.floor(Math.random() * 3) + 1;
   const containerdem = document.getElementById("demo");
 
@@ -14,7 +14,7 @@ function onetothree() {
 
   //we use this paragraphs for all our conditions so we right here only once
 
-  // this paragraph gets created only when the onetothree function runs
+  // this paragraph gets created only when the oneToThree function runs
   const p = document.createElement("p");
   p.textContent = "Computer chose ";
   p.classList.add("demo-result"); 
@@ -141,7 +141,7 @@ function playSoundR() {
 
 
 
-rockBut.addEventListener("click", onetothree);
+rockBut.addEventListener("click", oneToThree);
 rockBut.addEventListener("click", playSoundR);
 rockBut.addEventListener("click", function colorText() {
   document.getElementsByClassName(
@@ -149,7 +149,7 @@ rockBut.addEventListener("click", function colorText() {
   )[0].style.color = randomColor();
 });
 paperBut.addEventListener("click", playSoundP);
-paperBut.addEventListener("click", onetothree);
+paperBut.addEventListener("click", oneToThree);
 
 paperBut.addEventListener("click", function colorText() {
   document.getElementsByClassName(
@@ -158,7 +158,7 @@ paperBut.addEventListener("click", function colorText() {
 });
 
 scissorsBut.addEventListener("click", playSoundS);
-scissorsBut.addEventListener("click", onetothree);
+scissorsBut.addEventListener("click", oneToThree);
 scissorsBut.addEventListener("click", function colorText() {
   document.getElementsByClassName(
     "demo-result"
