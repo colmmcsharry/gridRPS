@@ -1,6 +1,21 @@
 playerScore = 0;
 compScore = 0;
 
+let playerChoice = "";
+rockBut.addEventListener("click", function() {
+  playerChoice = "ROCK";
+});
+
+scissorsBut.addEventListener("click", function() {
+  playerChoice = "SCISSORS";
+});
+
+paperBut.addEventListener("click", function() {
+  playerChoice = "PAPER";
+});
+
+
+
 // this function creates a random number from 1-3
 function oneToThree() {
   res = Math.floor(Math.random() * 3) + 1;
@@ -38,7 +53,7 @@ function oneToThree() {
 
   containerdem.appendChild(p);
 
-  function PlayGame() {
+  function playGame() {
     if (playerChoice === "ROCK" && res === 3) {
       document.getElementById("resuult").innerHTML = "DRAW!";
     } else if (playerChoice === "ROCK" && res === 2) {
@@ -122,7 +137,8 @@ function oneToThree() {
     }
   }
 
-  rockBut.addEventListener("click", PlayGame());
+  document.addEventListener("click", playGame());
+  // working now but only for Rock Button. When I add the others, the function depletes too much energy
 }
 function playSoundS() {
   var sound = document.getElementById("scisound");
@@ -178,15 +194,5 @@ function randomColor() {
 }
 
 // playerChoice is just the string that shows up in text what you clicked on
-let playerChoice = "";
-rockBut.addEventListener("click", function() {
-  playerChoice = "ROCK";
-});
 
-scissors.addEventListener("click", function() {
-  playerChoice = "SCISSORS";
-});
 
-paper.addEventListener("click", function() {
-  playerChoice = "PAPER";
-});
